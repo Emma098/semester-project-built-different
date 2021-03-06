@@ -1,25 +1,18 @@
 // ES5 Syntax
-const express = require("express");
-const userRoutes = require("./routes/user");
-const bodyparser = require("body-parser");
-const app = express();
+const express = require('express')
+const userRoutes  = require('./routes/user')
+const bodyparser = require('body-parser')
+const app = express()
+const port = 3000
 
-// port assigned for development
-const port = 5000;
 // allow passing JSON and form data in request body.
 app.use(bodyparser.urlencoded({ extended: false }));
-app.use(bodyparser.json());
+app.use(bodyparser.json({ limit: '50mb' }));
 
 // route that handles all incoming user-related requests.
-app.use("/api/user", userRoutes);
-
-app.use("/", (req, res) =>
-  res.send(
-    "If you see this message, you set up the project right, congrats!",
-  ),
-);
+app.use('/api/user',userRoutes)
 
 // server is initialized and listening to incoming requests.
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost/${port}`);
-});
+  console.log(`Example app listening at http://localhost:${port}`)
+})
