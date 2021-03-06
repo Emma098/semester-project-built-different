@@ -16,8 +16,13 @@ We have taken the task to develop a simple, user friendly web-app that will full
 A quick recap of the tools that were used for this program. 
 ### Next.Js
     A React Framework that provides easy building tools for hybrid applications. 
-### Postgress
-###
+    some of its benefits include Server Side Rendering, Excellent Search Engine Optimization capabilities, and amazing scalability opportunities
+### Postgresssql
+    A common database in the industry, giving the team experience using it. 
+### Jest
+    For testing the web-app.
+### Node.js and Express.js
+    It has amazing integrated libraries that make the process of building APIs very easy.
 ## Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -43,30 +48,29 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Styling Guide
 ```diff
 Colors to use: 
-    #C8E1BA 
-    #E5F1DE 
-    #E1CBBA 
-    #B5ABA3 
-    #FEFAF7
+    #53AB4B
+    #F6F6F6
+    #030803
+    #86EC7D
 ```
 ## RUM2GO - THE APP
 The web app wil be accessible through any device with access to the internet. Now, we will breakdown the different pages that will be accessible to the customers. 
 ### Sign Up Page
-    This will provide a simple form that customers and cafeteria employees will use to create their account.
+    This will provide a simple form that customers and cafeteria employees will use to create their accounts.
 ### Admin Page
-    As this app will be used by consumers and providers just the same, an admin page will provide access into the active orders and any process they would need to follow on. 
+    As this app will be used by consumers and providers just the same, an admin page will provide access for the cafeteria employees into the active orders and any process they would need to follow on. 
 ### Login Page
     After your account is created, this step will not be required again and instead will access the account from the login page. Here the user will need to provide their email and chosen password. 
 ### Home Page
-    When the user log's in, they will be redirected to this page where they will be able to start their order. This will also provide a highlighted section for any special offers for the day and a resume for the recurrent orders. The Home Page will also provide easy access to the different food stations provided by the cafeteria. 
+    When the user log's in, they will be redirected to this page where they will be able to start their order. This will also provide a highlighted section for any special offers for the day and a summary for the recurrent orders. The Home Page will also provide easy access to the different food stations provided by the cafeteria. 
 ### Food Detail Page
-    A detailed view of the individual food item the user can order will be showed in this page. From here they can add it to their tray.
+    A detailed view of the individual food item the user can order will be showed. From here they can add it to their tray.
 ### Cart Page
     The Cart Page will provide a summary of your current order and the total, where you can go and checkout, placing your order.
 ### Checkout Page
-    After you place your order you will need to provide a method of payment from the predetermined options. If the method of payment is not cash, they will also use this page to provide the respective information for their credit card and continue to pay.
+    After you place your order you will need to provide a method of payment from the predetermined options. If the method of payment is not cash, the user will also use this page to provide the respective information for their credit card and continue to pay.
 ### Settings Page
-    Every account will be provided a detailed settings page where they can edit their profiles, see their order history, manage their account, seek help and support or change their preferred payment method. 
+    Every account will be provided a detailed Settings Page where they can edit their profiles, see their order history, manage their account, seek help and support or change their preferred payment method. 
 ### Receipt Page
     After the user places and pays an order they will be redirected to the Receipt Page. The user will be able to see their order number and the status of payment. When the user gos to pick up their order, they can show this page to the employee, confirming if their order has been payed for or if they will be paying cash for their order.
 ## References
